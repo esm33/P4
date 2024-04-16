@@ -1,3 +1,4 @@
+<!-- DEVELOPER: Emily Morales Medina, IS117-006, Spring 2024 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +21,7 @@
                     col-12">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="index.html">Logo</a>
+                <a class="navbar-brand" href="index.html">Shooting Star</a>
                 <!-- Responsive Button for the smaller menu -->
                 <button class="navbar-toggler" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -30,13 +31,20 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <!-- Links -->
                         <li class="nav-item">
-                            <a class="active nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="sales_calendar.html">Sales Calendar</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="person_profile.html">Personal Profile</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbardrop"
+                            data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Personal
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="person_profile.html">Personal Profile</a>
+                                <a class="dropdown-item" href="personal_wishlist.html">Personal Wishlist</a>
+                            </div>
                         </li>
                         <!-- Dropdown -->
                         <li class="nav-item dropdown">
@@ -56,7 +64,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="active nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -111,14 +119,15 @@
 
 
 
- <footer class="footer page-footer font-small ">
-     <div class="container">
+<footer class="footer page-footer font-small ">
+    <div class="container">
         <div class="row">
-            <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>
+            <span class="text-muted">&copy; Emily Morales, 2024 |  Terms Of Use  |  Privacy Statement</span>
         </div>
-     </div>
-  </footer>
-</div>
+    </div>
+</footer>
+
+
 
 
     <!-- Javascript Bundle with Popper -->

@@ -1,6 +1,40 @@
 <!-- DEVELOPER: Emily Morales Medina, IS117-006, Spring 2024 -->
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    height: auto;
+    margin-top: 25px;
+  }
+  .card-img-top {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+  .img-fluid{
+    height: 300px;
+  }
+  .badge{
+    border-radius: 50px;
+    margin-bottom: 10px;
+  }
+  .articletag{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+  }
+</style>
 <head>
     <meta charset="UTF-8">
     <title>Wishlist - Home</title>
@@ -21,7 +55,7 @@
                     col-12">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="index.html">Logo</a>
+                <a class="navbar-brand" href="index.html">Shooting Star</a>
                 <!-- Responsive Button for the smaller menu -->
                 <button class="navbar-toggler" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -36,9 +70,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="sales_calendar.html">Sales Calendar</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="person_profile.html">Personal Profile</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="" id="navbardrop"
+                          data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Personal
+                          </a>
+                          <div class="dropdown-menu">
+                              <a class="dropdown-item" href="person_profile.html">Personal Profile</a>
+                              <a class="dropdown-item" href="personal_wishlist.html">Personal Wishlist</a>
+                          </div>
+                      </li>
                         <!-- Dropdown -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="" id="navbardrop"
@@ -90,45 +131,45 @@
 </div>
 <!--======================================================================================-->
 <div class="container mt-5">
-    <h4 class="articletag">Article News Card</h4>
+    <h4 class="articletag">Home Page</h4>
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
-            <img src="./img/img1.jpg" class="card-img-top img-fluid" alt="...">
+            <img src="./images/happy.jpg" class="card-img-top img-fluid" alt="three yellow balls with smiley faces stacked vertically">
             <div class="card-body">
-                <span class="badge bg-primary">TECHNOLOGY</span>
-              <h5 class="card-title">Why is the Tesla Cybertruck designed the way it is?</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ullam! </p>
+                <span class="badge bg-primary">WELCOME!</span>
+              <h5 class="card-title">Hello there!👋</h5>
+              <p class="card-text">I'm glad you made it here at Shooting Star. Feel free to browse through this website and visualize your personal wishlist</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="./img/img2.jpg" class="card-img-top  img-fluid" alt="...">
+            <img src="./images/profile_maker.jpg" class="card-img-top img-fluid" alt="collage of girl with flowers and graphic design icons">
             <div class="card-body">
-                <span class="badge bg-success">POPULAR</span>
-              <h5 class="card-title">How to Keep Going When You Don’t Know What’s Next.</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ullam!</p>
+                <span class="badge bg-success">PERSONALIZE</span>
+              <h5 class="card-title">Decorate your profile!</h5>
+              <p class="card-text">Feel free to be you and share your favorites with others by customizing your profile.</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="./img/img3.jpg" class="card-img-top  img-fluid" alt="...">
+            <img src="./images/shooting_star.jpg" class="card-img-top img-fluid" alt="shooting star">
             <div class="card-body">
-                <span class="badge bg-danger">Design</span>
-              <h5 class="card-title">10 Rules of Dashboard Design.</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ullam!</p>
-            </div>
+                <span class="badge bg-danger">WISH</span>
+                <h5 class="card-title">Create your own wishlist!</h5>
+                <p class="card-text">Unlock the power of personalization with our wishlist feature! Tailor your online shopping experience to your unique preferences.</p>
+              </div>
           </div>
         </div>
-       
       </div>
 </div>
 <!--======================================================================================-->
 
-
+<br>
+<br>
 
 <footer class="footer page-footer font-small ">
     <div class="container">
@@ -137,7 +178,6 @@
         </div>
     </div>
 </footer>
-</div>
 
 
     <!-- Javascript Bundle with Popper -->
