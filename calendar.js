@@ -1,3 +1,4 @@
+/* DEVELOPER: Emily Morales Medina, IS117-006, Spring 2024 */
 document.addEventListener('DOMContentLoaded', function () {
     const calendarEl = document.getElementById('calendar');
     const myModal = new bootstrap.Modal(document.getElementById('form'));
